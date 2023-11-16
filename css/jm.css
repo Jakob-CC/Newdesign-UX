@@ -1,0 +1,23 @@
+/* :D
+
+*/
+
+.jm-nav {
+    display: flex;
+    justify-content: end;
+}
+
+.jm-nav ul {
+    padding: 10px 0;
+}
+
+.jm-nav ul li {
+    margin-left: 10px;
+    display: inline;
+}
+
+.jm-button {
+    border: 1.4px solid black;
+    border-radius: 2px;
+    padding: 4px 10px 6px 10px;
+}

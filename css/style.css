@@ -1,0 +1,18 @@
+.width-100 {
+	/* = .w-100 */
+	width: 100%;
+}
+
+.td-none {
+	text-decoration: none;
+}
+
+.thumbnail-max {
+	max-width: 150px;
+    width: 100%;
+}
+
+.b-white {
+	/* ~ .bg-white */
+	background: #fff !important;
+}
