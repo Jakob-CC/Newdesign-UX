@@ -10,44 +10,33 @@
 </head>
 <body>
 	<main class="container">
-		<nav class="jm-nav">
-			<ul>
-				<li>Home</li>
-				<li>Termine</li>
-				<li class="jm-button">Logout</li>
-			</ul>
-		</nav>
+		<div class="row d-flex align-items-center py-3">
+			
+			<div class="col-12 col-md-6">
+				<h5>Termin Übersicht</h5>
+			</div>
+			<div class="col-12 col-md-6">
+			
+				<nav class="jm-nav">
+					<ul>
+						<li>Home</li>
+						<li>Termine</li>
+						<li class="jm-button">Logout</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 		<article>
-			<h1>Termin Übersicht</h1>
+			
 			<section>
-				<h4>Suche</h4>
-				<div class="jm-suche">
+				<!-- <h4>Suche</h4> -->
+				<div class="row row-cols-1 row-cols-md-4 text-center">
 					<form action="#" method="POST" class="pt-3 sticky-top b-white">
 						<h5>Filter</h5>
-						<div class="row">
+						<div class="col">
 							<div class="col-6 col-md-3">
 								<select title="Projektleitung" class="form-select mb-3" name="projektleitung" id="projektleitung">
 									<option value="0">Projektleitung</option>
-														<option value="5289" >Anett M.</option>
-														<option value="4150" >Angelika D.</option>
-														<option value="610" >Anne K.</option>
-														<option value="19" >Brigitte N.</option>
-														<option value="1192" >Christian C.</option>
-														<option value="1193" >Daria P.</option>
-														<option value="3442" >Dennis S.</option>
-														<option value="5080" >Dominik P.</option>
-														<option value="1130" >Doris R.</option>
-														<option value="1599" >Efanam M.</option>
-														<option value="4155" >Elisabeth B.</option>
-														<option value="4164" >Eliza K.</option>
-														<option value="613" >Gabriele B.</option>
-														<option value="2613" >Gina B.</option>
-														<option value="3764" >Gina I.</option>
-														<option value="164" >Janine Z.</option>
-														<option value="4677" >Jeanine N.</option>
-														<option value="4117" >Josephine K.</option>
-														<option value="340" >Julie-Amandine L.</option>
-														<option value="3798" >Kojo A.</option>
 														<option value="552" >Leoni K.</option>
 														<option value="399" >Lothar W.</option>
 														<option value="2700" >Luisa G.</option>
@@ -73,46 +62,6 @@
 							</div>
 							<div class="col-6 col-md-3">
 								<select title="Jahr" class="form-select mb-3" name="jahr" id="jahr">
-														<option value="1970" >1970</option>
-														<option value="1971" >1971</option>
-														<option value="1972" >1972</option>
-														<option value="1973" >1973</option>
-														<option value="1974" >1974</option>
-														<option value="1975" >1975</option>
-														<option value="1976" >1976</option>
-														<option value="1977" >1977</option>
-														<option value="1978" >1978</option>
-														<option value="1979" >1979</option>
-														<option value="1980" >1980</option>
-														<option value="1981" >1981</option>
-														<option value="1982" >1982</option>
-														<option value="1983" >1983</option>
-														<option value="1984" >1984</option>
-														<option value="1985" >1985</option>
-														<option value="1986" >1986</option>
-														<option value="1987" >1987</option>
-														<option value="1988" >1988</option>
-														<option value="1989" >1989</option>
-														<option value="1990" >1990</option>
-														<option value="1991" >1991</option>
-														<option value="1992" >1992</option>
-														<option value="1993" >1993</option>
-														<option value="1994" >1994</option>
-														<option value="1995" >1995</option>
-														<option value="1996" >1996</option>
-														<option value="1997" >1997</option>
-														<option value="1998" >1998</option>
-														<option value="1999" >1999</option>
-														<option value="2000" >2000</option>
-														<option value="2001" >2001</option>
-														<option value="2002" >2002</option>
-														<option value="2003" >2003</option>
-														<option value="2004" >2004</option>
-														<option value="2005" >2005</option>
-														<option value="2006" >2006</option>
-														<option value="2007" >2007</option>
-														<option value="2008" >2008</option>
-														<option value="2009" >2009</option>
 														<option value="2010" >2010</option>
 														<option value="2011" >2011</option>
 														<option value="2012" >2012</option>
@@ -136,12 +85,12 @@
 							</div>
 						</div>
 						<h5>Stichwortsuche</h5>
-						<div class="row">
+						<div class="col row">
 							<div class="col-6 col-md-3">
 								<input class="form-control mb-3" type="text" placeholder="Nach Wörtern suchen" name="suche" id="suche" value="">
 							</div>
 							<div class="col-6 col-md-3">
-								<button type="submit" class="btn btn-primary mb-3 width-100">Filtern</button>
+								<button type="submit" class="btn btn-primary mb-3 width-100">Suchen</button>
 							</div>
 						</div>
 					</form>
@@ -149,23 +98,22 @@
 			</section>
 			<section>
 				<div class="jm-ergebnisse">
-					<div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+					<div class="row row-cols-1 row-cols-md-4 text-center">
 						<div class="card mb-4 rounded-3 shadow-sm">
-							<div class="card-header py-3">
-								<img alt="Logo" src="https://newdesign.cc2c.de/images/termine/abs.png" class="img-thumbnail thumbnail-max ">
+							<div class="card-header">
+								<img alt="Logo" src="https://newdesign.cc2c.de/images/termine/abs.png" class="">
 								<h4 class="my-0 fw-normal">Antibiotic Stewardship</h4>
 							</div>
 							<div class="card-body">
 								<div class="card-title pricing-card-title">
-									<h4>Neuer Termin 26. und 27. Januar 2024: Antibiotic Stewardship – Netzwerktreffen</h4>
-									<ul class="list-unstyled mt-3 mb-4">
-										<li>15. - 16.12.2023</li>
-										<li>23013 Bonn</li>
-										<li>Doris R.</li>
-										<li>Lutz E.</li>
-									  </ul>
-									
+									<h6>Neuer Termin 26. und 27. Januar 2024: Antibiotic Stewardship – Netzwerktreffen</h6>
 								</div>
+								<ul class="list-unstyled mt-3 mb-4">
+									<li>15. - 16.12.2023</li>
+									<li>Bonn</li>
+									<li>Doris R., Lutz E.</li>
+								</ul>
+								<button type="button" class="w-100 btn btn-lg btn-outline-primary">Bearbeiten</button>
 							</div>
 						</div>
 						<div class="card mb-4 rounded-3 shadow-sm">test</div>
