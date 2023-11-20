@@ -11,6 +11,5 @@
 }
 
 .jm-shadow {
-    z-index: 10000;
     box-shadow: inset 0 0 30px rgba(0,0,0,0.15);
 }
