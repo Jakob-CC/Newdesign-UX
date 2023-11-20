@@ -1,23 +1,16 @@
 /* :D
 
 */
-
-.jm-nav {
-    display: flex;
-    justify-content: end;
+.jm-img {
+    max-height: 80px;
+    width: auto;
 }
 
-.jm-nav ul {
-    padding: 10px 0;
+.jm-zindex {
+    z-index: 10000000 !important;
 }
 
-.jm-nav ul li {
-    margin-left: 10px;
-    display: inline;
-}
-
-.jm-button {
-    border: 1.4px solid black;
-    border-radius: 2px;
-    padding: 4px 10px 6px 10px;
+.jm-shadow {
+    z-index: 10000;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.15);
 }
