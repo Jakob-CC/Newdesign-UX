@@ -75,9 +75,11 @@
 						</div>
 					</div>
 					<!-- Suche -->
-					<form class="mx-2  nav-item nav-link  form-inline d-flex flex-row align-content-center flex-wrap">
-						<input  style="border-radius: 5px 0px 0px 5px" class="col form-control form-control-sm rounded-left" type="search" placeholder="Suche" aria-label="Suche">
-						<button style="border-radius: 0px 5px 5px 0px"  title="Suche" class="col-2 btn btn-sm btn-outline-secondary" type="submit"> <i class="bi bi-search"></i></button>
+					<form class="mx-2 nav-item nav-link">
+						<div class="input-group input-group-sm ">
+							<input type="text" class="form-control form-control-sm" placeholder="Recipient's username" aria-label="Suche" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+						</div>
 					</form>
 				</div>
 
@@ -94,7 +96,7 @@
 							<div class="col-sm-6 col-xl-4 row">
 								<h6>Filter</h6>
 								<div class="col-12 col-md-6 ">
-									<select title="Projektleitung" class="form-select mb-3" name="projektleitung" id="projektleitung">
+									<select title="Projektleitung" class="form-select form-select-sm mb-3" name="projektleitung" id="projektleitung">
 										<option value="0">Projektleitung</option>
 										<option value="552" >Leoni K.</option>
 										<option value="399" >Lothar W.</option>
@@ -120,7 +122,7 @@
 									</select>
 								</div>
 								<div class="col-12 col-md-6 ">
-									<select title="Jahr" class="form-select mb-3" name="jahr" id="jahr">
+									<select title="Jahr" class="form-select form-select-sm mb-3" name="jahr" id="jahr">
 																<option value="2010" >2010</option>
 																<option value="2011" >2011</option>
 																<option value="2012" >2012</option>
@@ -146,14 +148,11 @@
 							<div class="col-sm-6 col-xl-3">
 	
 								<h6>Stichwortsuche</h6>
-								<div class="row g-1">
-									<div class="col-9">
-										<input class="col-8 form-control  mb-3" type="text" placeholder="Suche" name="suche" id="suche" value="">
-									</div>
-									<div class="col-2">
-										<button type="submit" class="btn btn-secondary mb-3 width-100"><i class="bi bi-search"></i></button>
-									</div>
+								<div class="input-group input-group-sm ">
+									<input type="text" class="form-control form-control-sm" placeholder="Suche nach Buchstaben" aria-label="Suche" aria-describedby="button-addon2">
+									<button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
 								</div>
+								
 							</div>
 
 						</div>
@@ -175,26 +174,64 @@
             <div class="col-3 m-2 py-xl-1">
                 <img alt="AGA-Akademiekurs Logo" src="https://newdesign.cc2c.de/images/termine/aga_akademie.jpg" class="img-fluid jm-img">
             </div>
-            <div class="col-8 mx-1 py-xl-2">
-                <h6>AGA-Akademiekurs "Hüfte"</h6>
-				<div class="jm-small"></div>
+			<div class="col mx-1">
+				
+				<div class="py-xl-2">
+					<h6>AGA-Akademiekurs "Hüfte"</h6>
+								<div class="jm-small"></div>
+				</div>
+				<div class="jm-small px-2 py-1 d-flex flex-row flex-wrap gap-1 bg-light border-top rounded text-secondary">
+					<div class="col d-flex flex-row flex-wrap ">
+						<div class=""><strong>Datum&nbsp;</strong></div>
+						<div class="">17.-18.11.</div>
+					</div>
+					<div class="col d-flex flex-row flex-wrap ">
+						<div class=""><strong>Ort&nbsp;</strong></div>
+						<div class="">Wien</div>
+					</div>
+					<div class="col d-flex flex-row flex-wrap ">
+						<div class=""><strong>ID&nbsp;</strong></div>
+						<div class="">23133</div>
+					</div>
+					<div class="col-12 d-flex flex-row flex-wrap ">
+						<div class=""><strong>PM&nbsp;</strong></div>
+						<div class="">Sarah K., Eliza K.</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+<!-- Card for KV Berlin Vertreterversammlung 19:00 Uhr -->
+<div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+    <div class="p-1 bg-white shadow rounded">
+        <div class="d-flex flex-row flex-wrap">
+            <div class="col-3 m-2 py-xl-1">
+                <!-- Dummy image provided -->
+                <img alt="Dummy Logo" src="../../img/dummy.png" class="img-fluid jm-img">
             </div>
-            <div class="jm-small col m-2 px-2 d-flex flex-row flex-wrap gap-1 bg-light border-top rounded text-secondary">
-                <div class="col d-flex flex-row flex-wrap ">
-                    <div class=""><strong>Datum&nbsp;</strong></div>
-                    <div class="">17.-18.11.</div>
+            <div class="col mx-1">
+                <div class="py-xl-2">
+                    <h6>KV Berlin Vertreterversammlung 19:00 Uhr</h6>
+                    <div class="jm-small"></div>
                 </div>
-                <div class="col d-flex flex-row flex-wrap ">
-                    <div class=""><strong>Ort&nbsp;</strong></div>
-                    <div class="">Wien</div>
-                </div>
-                <div class="col d-flex flex-row flex-wrap ">
-                    <div class=""><strong>ID&nbsp;</strong></div>
-                    <div class="">23133</div>
-                </div>
-                <div class="col-12 d-flex flex-row flex-wrap ">
-                    <div class=""><strong>PM&nbsp;</strong></div>
-                    <div class="">Sarah K., Eliza K.</div>
+                <div class="jm-small px-2 py-1 d-flex flex-row flex-wrap gap-1 bg-light border-top rounded text-secondary">
+                    <div class="col d-flex flex-row flex-wrap ">
+                        <div class=""><strong>Datum&nbsp;</strong></div>
+                        <div class="">23.11.2023</div>
+                    </div>
+                    <div class="col d-flex flex-row flex-wrap ">
+                        <div class=""><strong>Ort&nbsp;</strong></div>
+                        <div class="">Congress Live</div>
+                    </div>
+                    <div class="col d-flex flex-row flex-wrap ">
+                        <div class=""><strong>ID&nbsp;</strong></div>
+                        <div class="">--</div>
+                    </div>
+                    <div class="col-12 d-flex flex-row flex-wrap ">
+                        <div class=""><strong>PM&nbsp;</strong></div>
+                        <div class="">Thomas R., Anne K.</div>
+                    </div>
                 </div>
             </div>
         </div>
